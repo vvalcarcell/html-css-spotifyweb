@@ -40,7 +40,7 @@ main {
 aside {
     background-color: black;
     color: grey;
-    height: 100%;
+    height: calc(100vh - 90px);
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,11 @@ aside {
 
 .sidebar, .playlist {
     margin-top: 20px;
+}
+
+.sidebar {
+    flex-basis: auto;
+    flex-shrink: 0;
 }
 
 .sidebar img {
@@ -78,9 +83,22 @@ aside {
     vertical-align: middle;
 }
 
+.playlist {
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow: auto;
+}
+
 .playlist li {
     margin-top: 15px;
     font-size: 10px;
+}
+
+aside > .bottom {
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin-top: 20px;
 }
 
 .bottom > .top {
@@ -91,13 +109,21 @@ aside {
 } 
 
 .bottom > .bottom {
-    font-size: 15px;
-    margin-top: 15px;
+    font-size: 14px;
+    margin-top: 13px;
     color: white;
 }
 
+.bottom > .bottom > .fa-user-circle {
+    font-size: 25px;
+    line-height: 25px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .bottom span {
-    padding-left: 5px;
+    padding-left: 4px;
 }
 
 main > section {
