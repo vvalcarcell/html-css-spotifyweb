@@ -114,12 +114,20 @@ aside > .bottom {
     color: white;
 }
 
-.bottom > .bottom > .fa-user-circle {
-    font-size: 25px;
-    line-height: 25px;
-    width: 30px;
-    text-align: center;
+.bottom img {
+    width: 20px;
+    margin-right: 5px;
     vertical-align: middle;
+}
+
+.bottom > .top > img {
+    filter: invert(0.2);
+}
+
+.bottom > .bottom > img {
+    background-color: grey;
+    border-radius: 50%;
+    width: 30px;
 }
 
 .bottom span {
