@@ -43,14 +43,16 @@ aside {
     width: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
+    overflow-y: hidden;
 }
 
 .top {
     flex-basis: 350px;
 }
 
-.top > img {
+.logo img {
     height: 40px;
 }
 
@@ -69,7 +71,14 @@ nav img {
     margin-bottom: 8px;
 }
 
-.playlist {}
+.sidebar svg, .sidebar svg path {
+    fill: grey;
+}
+
+.playlist {
+    height: 60%;
+    overflow: auto;
+}
 
 .icon {
     display: inline-block;
@@ -82,13 +91,6 @@ nav img {
 }
 
 .bottom {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: seagreen;
-}
-
-.box {
     flex-basis: 90px;
     width: 100%;
     background-color: silver;
