@@ -4,6 +4,19 @@
     padding: 0;
 }
 
+/* COMMON RULES*/
+
+li a {
+    text-decoration: none;
+}
+
+h6 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* END COMMON RULES*/
+
 .container-fluid {
     width: 100%;
     height: 100vh;
@@ -16,8 +29,58 @@ main {
 
 aside {
     background-color: black;
+    color: lightgrey;
     height: 100%;
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.top {
+    flex-basis: 350px;
+}
+
+.top > img {
+    height: 45px;
+}
+
+nav, .playlist {
+    margin-top: 20px;
+}
+
+nav img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.sidebar li {
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.top a {
+    color: lightgrey
+}
+
+.playlist {
+    overflow-y: scroll;
+}
+
+.bottom {
+    flex-grow: 1;
+    position: relative;
+    background-color: seagreen;
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: silver;
 }
 
 main > section {
@@ -34,10 +97,10 @@ main > section {
     z-index: 1001;
     height: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .2);
 }
 
-main nav {
+.main > nav {
     margin-top: 70px;
     background-color: rosybrown;
     height: 100px;
