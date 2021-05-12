@@ -69,11 +69,7 @@ nav img {
     margin-bottom: 8px;
 }
 
-@media  screen and (min-heigh: 345px) {
-    .playlist {
-        overflow-y: scroll;
-    }    
-}
+.playlist {}
 
 .icon {
     display: inline-block;
@@ -87,14 +83,13 @@ nav img {
 
 .bottom {
     flex-grow: 1;
-    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
     background-color: seagreen;
 }
 
 .box {
-    position: absolute;
-    bottom: 0;
-    height: 90px;
+    flex-basis: 90px;
     width: 100%;
     background-color: silver;
 }
