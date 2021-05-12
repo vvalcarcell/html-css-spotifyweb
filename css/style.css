@@ -60,6 +60,7 @@ aside {
 .sidebar img {
     height: 20px;
     vertical-align: middle;
+    filter: invert(0.2);
 }
 
 .sidebar a, .playlist span {
@@ -70,10 +71,6 @@ aside {
     height: 20px;
     line-height: 20px;
     margin-bottom: 8px;
-}
-
-.sidebar svg, .sidebar svg path {
-    fill: grey;
 }
 
 .icon {
