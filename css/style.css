@@ -16,12 +16,35 @@ main {
 
 aside {
     background-color: black;
+    height: 100%;
+    width: 200px;
 }
 
-.content {
+main > section {
     background-color: #141922;
     overflow-y: scroll;
     height: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+main nav {
+    margin-top: 70px;
+    background-color: rosybrown;
+    height: 100px;
+}
+
+.content {
+    height: 200vh;
 }
 
 footer {
