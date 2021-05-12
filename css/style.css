@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* COMMON RULES*/
@@ -17,7 +18,7 @@ ul {
 
 li a {
     text-decoration: none;
-    color: lightgrey;
+    color: grey;
 }
 
 .sidebar li, .playlist span {
@@ -38,31 +39,31 @@ main {
 
 aside {
     background-color: black;
-    color: lightgrey;
+    color: grey;
     height: 100%;
     width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
+    padding: 15px 18px 6px;
     overflow-y: hidden;
-}
-
-.top {
-    flex-basis: 350px;
 }
 
 .logo img {
     height: 40px;
 }
 
-nav, .playlist {
+.sidebar, .playlist {
     margin-top: 20px;
 }
 
-nav img {
+.sidebar img {
     height: 20px;
     vertical-align: middle;
+}
+
+.sidebar a, .playlist span {
+    margin-left: 5px;
 }
 
 .sidebar li {
@@ -75,25 +76,31 @@ nav img {
     fill: grey;
 }
 
-.playlist {
-    height: 60%;
-    overflow: auto;
-}
-
 .icon {
     display: inline-block;
     vertical-align: middle;
 }
 
 .playlist li {
-    margin-top: 12px;
+    margin-top: 15px;
     font-size: 10px;
 }
 
-.bottom {
-    flex-basis: 90px;
-    width: 100%;
-    background-color: silver;
+.bottom > .top {
+    font-size: 12px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+} 
+
+.bottom > .bottom {
+    font-size: 15px;
+    margin-top: 15px;
+    color: white;
+}
+
+.bottom span {
+    padding-left: 5px;
 }
 
 main > section {
@@ -109,8 +116,23 @@ main > section {
     top: 0;
     z-index: 1001;
     height: 70px;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.fixed button {
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 25px;
+    border: 1px white solid;
+    border-radius: 20px;
+    color: white;
+    width: 230px;
+    cursor: pointer;         
 }
 
 .main > nav {
