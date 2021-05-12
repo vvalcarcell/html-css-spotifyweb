@@ -6,13 +6,22 @@
 
 /* COMMON RULES*/
 
-li a {
-    text-decoration: none;
-}
-
 h6 {
     color: white;
     margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.sidebar li, .playlist span {
+    font-size: 12px;
 }
 
 /* END COMMON RULES*/
@@ -34,7 +43,7 @@ aside {
     width: 200px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px;
 }
 
 .top {
@@ -42,7 +51,7 @@ aside {
 }
 
 .top > img {
-    height: 45px;
+    height: 40px;
 }
 
 nav, .playlist {
@@ -55,18 +64,25 @@ nav img {
 }
 
 .sidebar li {
-    font-size: 13px;
     height: 20px;
     line-height: 20px;
     margin-bottom: 8px;
 }
 
-.top a {
-    color: lightgrey
+@media  screen and (min-heigh: 345px) {
+    .playlist {
+        overflow-y: scroll;
+    }    
 }
 
-.playlist {
-    overflow-y: scroll;
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.playlist li {
+    margin-top: 12px;
+    font-size: 10px;
 }
 
 .bottom {
@@ -112,5 +128,7 @@ main > section {
 
 footer {
     height: 90px;
-    background-color: #282828;
+    background-color:#282828;
+    z-index: 1000;
 }
+
