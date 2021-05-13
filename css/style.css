@@ -175,10 +175,25 @@ main > section {
     cursor: pointer;         
 }
 
-.main > nav {
+.topbar {
     margin-top: 70px;
-    background-color: rosybrown;
-    height: 100px;
+    height: 50px;
+    background-color: lightpink;
+    color: gray;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topbar li {
+    margin-right: 25px;
 }
 
 .content {
@@ -198,7 +213,6 @@ footer {
 footer > section {
     border: 1px solid white;
     flex: 0 0 auto;
-    /* height: 70px; */
 }
 
 footer ul {
@@ -290,6 +304,8 @@ i.fa-play-circle {
 
 .right {
     flex-basis: 13%;
+    flex-shrink: 0;
+    justify-content: space-between;
 }
 
 .right ul {
@@ -297,7 +313,7 @@ i.fa-play-circle {
 }
 
 .right li:last-child {
-    flex-basis: 100px
+    flex-basis: 100px;
 }
 
 
