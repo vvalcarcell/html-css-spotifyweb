@@ -8,7 +8,7 @@
 
 /* COMMON RULES*/
 
-h6 {
+.playlist h6 {
     color: white;
     margin-bottom: 10px;
 }
@@ -41,7 +41,7 @@ main {
 aside {
     background-color: black;
     color: grey;
-    height: calc(100vh - 90px);
+    height: 100%;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -185,5 +185,50 @@ footer {
     height: 90px;
     background-color:#282828;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+footer > section {
+    border: 1px solid white;
+    flex: 0 0 auto;
+    /* height: 70px; */
+}
+
+.center {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    width: 50px;
+}
+
+.left li:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra {
+    height: 10px;
+    width: 200px;
+    background-color: ivory;
+}
+
+.barra2 {
+    height: 100%;
+    width: 30%;
+    background-color: lightcoral;
+}
+
+
 
