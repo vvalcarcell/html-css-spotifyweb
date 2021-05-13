@@ -364,17 +364,22 @@ i.fa-play-circle {
 .right i {
     color: lightgray;
     font-size: 13px;
-    padding-right: 10px;
 }
 
-.right {
-    flex-basis: 13%;
-    flex-shrink: 0;
+.right li {
+    margin-right: 5px;
+    flex: 0 0 auto;
 }
 
 /* .right ul {
     flex: 0 0 auto;
 } */
+
+.right {
+    flex-basis: 13%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
 
 .right li:last-child {
     flex-basis: 100px;
