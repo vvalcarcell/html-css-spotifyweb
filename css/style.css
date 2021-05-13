@@ -17,6 +17,10 @@
 }
 
 /* COMMON RULES*/
+h2 {
+    color: white;
+    margin-top: 25px
+}
 
 h6 {
     color: white;
@@ -191,7 +195,6 @@ main > section {
 .topbar {
     margin-top: 70px;
     height: 50px;
-    background-color: lightpink;
     color: gray;
     font-size: 15px;
     display: flex;
@@ -209,22 +212,53 @@ main > section {
     margin-right: 25px;
 }
 
+.topbar li:first-child {
+    text-align: center;
+}
+
+.green-row {
+    height: 2px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: greenyellow;
+}
+
 /*Zona Playlist*/
 
 .container-playlist {
-    padding: 15px;
+    padding: 5px 5px 20px 20px;
 }
 
 .track {
     margin-top: 20px;
-    width: calc(100% / 6);
     text-align: center;
-    padding: 5px;
+}
+
+.recently .track {
+    width: calc(100% / 6);
+    padding-right: 15px;
 }
 
 .track img {
     width: 100%;
 }
+
+.container-playlist span {
+    color: grey;
+    font-size: 13px;
+}
+
+.fyou .track, .img-container {
+    width: 210px;
+    margin-right: 15px;
+}
+
+.img-container {
+    border-radius: 50%;
+}
+
+
+
 
 /*Footer*/
 
@@ -239,7 +273,6 @@ footer {
 }
 
 footer > section {
-    border: 1px solid white;
     flex: 0 0 auto;
 }
 
