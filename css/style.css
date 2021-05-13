@@ -8,8 +8,12 @@
 
 /* COMMON RULES*/
 
-.playlist h6 {
+h6 {
     color: white;
+    letter-spacing: 0.1em;
+}
+
+.playlist h6 {
     margin-bottom: 10px;
 }
 
@@ -184,6 +188,7 @@ main > section {
 footer {
     height: 90px;
     background-color:#282828;
+    color: grey;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -197,16 +202,60 @@ footer > section {
 }
 
 .center {
-    flex: 1 1 auto;
-    display: flex;
+    flex-basis: 40%;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    color: ivory; */
+    
+}
+
+.center ul:first-child {
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.center ul:first-child li {
+    flex-shrink: 0;
+}
+
+.time-bar {
+    flex-grow: 1;
+}
+
+.center li {
+    margin-right: 20px;
+}
+
+.center i {
+    font-size: 13px;
+}
+
+.center .time {
+    font-size: 10px;
+}
+
+i.fa-play-circle {
+    font-size: 25px;
+    vertical-align: middle;
+    width: 30px;
 }
 
 footer ul {
     display: flex;
     align-items: center;
+    padding: 5px;
+}
+
+footer img, footer i {
+    margin-right: 10px;
+}
+
+.left .info {
+    margin-right: 30px;
+    font-size: 15px;
 }
 
 footer img {
@@ -215,12 +264,11 @@ footer img {
 
 .left li:last-child {
     display: flex;
-    flex-direction: column;
 }
 
 .barra {
-    height: 10px;
-    width: 200px;
+    height: 3px;
+    width: 100%;
     background-color: ivory;
 }
 
