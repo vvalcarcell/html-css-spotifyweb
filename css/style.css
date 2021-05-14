@@ -203,7 +203,7 @@ main > section {
 }
 
 button:hover {
-    transform: scale(1);
+    transform: scale(1.2);
     cursor: pointer;         
 }
 
@@ -279,13 +279,9 @@ button:hover {
 }
 
 .cover i{
-    font-size: 2em;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    /* display: none; */
+    display: none;
+    overflow: visible;
 }
 
 .cover:hover img {
@@ -295,6 +291,46 @@ button:hover {
 
 .cover:hover i {
     display: block;
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+li:hover a {
+    color: white;
+    cursor: pointer;
+}
+
+i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+li:hover img {
+    filter: invert(0);
+    cursor: pointer;
+}
+
+span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+img:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.time:hover {
+    color: white;
     cursor: pointer;
 }
 
