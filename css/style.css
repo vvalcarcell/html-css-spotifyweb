@@ -203,7 +203,7 @@ main > section {
 }
 
 button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;         
 }
 
@@ -282,6 +282,10 @@ button:hover {
     color: white;
     display: none;
     overflow: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 .cover:hover img {
@@ -293,10 +297,9 @@ button:hover {
     display: block;
     cursor: pointer;
     font-size: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    height: 60px;
+    width: 60px;
+
 }
 
 li:hover {
@@ -309,33 +312,24 @@ li:hover a {
     cursor: pointer;
 }
 
-i:hover {
-    color: white;
-    cursor: pointer;
-}
-
 li:hover img {
     filter: invert(0);
     cursor: pointer;
 }
 
-span:hover {
+h2:hover, h6:hover, .time:hover, img:hover, span:hover, i.fas:hover {
     color: white;
     cursor: pointer;
 }
 
-img:hover {
-    color: white;
-    cursor: pointer;
+.barra:hover .barra2 {
+    background-color: greenyellow;
 }
 
-.time:hover {
-    color: white;
-    cursor: pointer;
+i.fa-play-circle:hover {
+    transform: scale(1.2);
+    overflow: visible;
 }
-
-
-
 
 /*Footer*/
 
@@ -385,7 +379,8 @@ footer img {
 /*Section Center*/
 
 .center {
-    flex-basis: 40%;  
+    flex-basis: 40%; 
+    margin-top: -20px; 
 }
 
 .center ul:first-child {
@@ -425,15 +420,30 @@ i.fa-play-circle {
 /*Barra*/
 
 .barra {
-    height: 3px;
+    height: 4px;
     width: 100%;
     background-color: gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .barra2 {
     height: 100%;
     width: 30%;
     background-color: lightgray;
+}
+
+.time-bar, .barra, footer li {
+    overflow: visible;
+}
+
+i.fas.fa-circle {
+    display: none;
+}
+
+.barra:hover i.fas.fa-circle {
+    display: block;
 }
 
 /*Section Right*/
