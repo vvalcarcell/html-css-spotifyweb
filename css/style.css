@@ -85,6 +85,17 @@ aside {
     flex-shrink: 0;
 }
 
+.sidebar .logo-small {
+    display: none;
+    height: 35px;
+    margin-left: -5px;
+    margin-bottom: 10px;
+}
+
+#logo-small {
+    height: 30px;
+}
+
 .sidebar img {
     height: 20px;
     vertical-align: middle;
@@ -469,6 +480,7 @@ i.fa-play-circle {
         width: 50px;
         padding-left: 5px;
         padding-right: 5px;
+        padding-top: 0;
     }
     .playlist {
         display: none;
@@ -482,6 +494,13 @@ i.fa-play-circle {
     .fixed {
         width: calc(100% - 50px);
     }
+    .logo {
+        display: none;
+    }
+    .sidebar .logo-small {
+        display: block;
+    }
+    
 
     
 }
