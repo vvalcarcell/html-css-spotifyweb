@@ -200,6 +200,10 @@ main > section {
     border-radius: 20px;
     color: white;
     width: 230px;
+}
+
+button:hover {
+    transform: scale(1);
     cursor: pointer;         
 }
 
@@ -275,13 +279,13 @@ main > section {
 }
 
 .cover i{
-    font-size: 100px;
+    font-size: 2em;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    display: none;
+    /* display: none; */
 }
 
 .cover:hover img {
@@ -336,7 +340,6 @@ footer img {
 
 .left li:last-child {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .info div {
@@ -472,6 +475,21 @@ i.fa-play-circle {
     .track h6 {
         font-size: 15px;
     }
+    .left li:last-child {
+        flex-direction: column;
+    }
+    .left .info {
+        margin-right: 8px;
+    }
+    .info div {
+        font-size: 10px;
+    }
+    footer img {
+        width: 30px;
+    }
+    footer img, footer i {
+        margin-right: 5px;
+    }
 }
 
 /*Extra-Small*/
@@ -500,10 +518,31 @@ i.fa-play-circle {
     .sidebar .logo-small {
         display: block;
     }
+    .left i {
+        font-size: 15px;
+    }
+    .right i {
+        font-size: 12px;
+    }
+    .right li {
+        margin-right: 3px;
+    }
+    .right li:last-child {
+        flex-basis: 70px;
+    }
+    .right ul {
+        justify-content: flex-start;
+    }
+    .right {
+        flex-basis: 160px;
+    }
+    .recently .track, .fyou .track {
+        height: 300px;
+    }
+}
     
 
     
-}
 
 
 
