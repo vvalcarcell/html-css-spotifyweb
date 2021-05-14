@@ -223,7 +223,8 @@ main > section {
     background-color: greenyellow;
 }
 
-/*Zona Playlist*/
+
+/*  -------TRACK--------       */
 
 .container-playlist {
     padding: 5px 5px 20px 20px;
@@ -255,6 +256,31 @@ main > section {
 
 .img-container {
     border-radius: 50%;
+}
+
+/*HOVER*/
+.cover {
+    position: relative;
+}
+
+.cover i{
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+
+.cover:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.cover:hover i {
+    display: block;
+    cursor: pointer;
 }
 
 
@@ -299,6 +325,7 @@ footer img {
 
 .left li:last-child {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .info div {
@@ -366,6 +393,10 @@ i.fa-play-circle {
     font-size: 13px;
 }
 
+.right ul {
+    justify-content: flex-end;
+}
+
 .right li {
     margin-right: 5px;
     flex: 0 0 auto;
@@ -376,7 +407,7 @@ i.fa-play-circle {
 } */
 
 .right {
-    flex-basis: 13%;
+    flex-basis: 200px;
     flex-shrink: 0;
     flex-grow: 0;
 }
@@ -384,6 +415,92 @@ i.fa-play-circle {
 .right li:last-child {
     flex-basis: 100px;
 }
+
+/*MEDIA QUERY*/
+
+/*Medium*/
+@media all and (max-width: 991px) {
+    .recently .track {
+        width: calc(100% / 4);
+        height: 230px;
+    }
+    .fyou .track {
+        width: calc(100% / 4);
+        height: 230px;
+    }
+    .img-container {
+        width: 130px;
+        height: 130px;
+    }
+    .track span {
+        font-size: 10px;
+        /* line-height: ; */
+    }
+    .track h6 {
+        font-size: 10px;
+    }
+}
+
+/*Small*/
+@media all and (max-width: 767px) {
+    .recently .track {
+        width: calc(100% / 2);
+        height: 320px;
+        margin-bottom: 10px;
+    }
+    .fyou .track {
+        width: calc(100% / 2 - 15px);
+        height: 320px;
+        margin-bottom: 10px;
+    }
+    .img-container {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .track h6 {
+        font-size: 15px;
+    }
+}
+
+/*Extra-Small*/
+@media all and (max-width: 575px) {
+    aside {
+        width: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .playlist {
+        display: none;
+    }
+    .profile span {
+        display: none;
+    }
+    .profile, .sidebar {
+        padding-left: 8px;
+    }
+    .fixed {
+        width: calc(100% - 50px);
+    }
+
+    
+}
+
+
+
+    
+
+
+
+
+/* @media screen and (min-widht: 768px) {
+    .recently .track {
+        width: calc(100% / 6);
+    }
+    
+} */
+
+
 
 
 
