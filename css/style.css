@@ -215,6 +215,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 
 .topbar ul {
@@ -225,6 +226,7 @@ button:hover {
 
 .topbar li {
     margin-right: 25px;
+    margin-bottom: 10px;
 }
 
 .topbar li:first-child {
@@ -521,6 +523,9 @@ i.fas.fa-circle {
     .track h6 {
         font-size: 15px;
     }
+    .left i {
+        font-size: 15px;
+    } 
     .left li:last-child {
         flex-direction: column;
     }
@@ -563,10 +568,7 @@ i.fas.fa-circle {
     }
     .sidebar .logo-small {
         display: block;
-    }
-    .left i {
-        font-size: 15px;
-    }
+    }  
     .right i {
         font-size: 12px;
     }
@@ -576,11 +578,8 @@ i.fas.fa-circle {
     .right li:last-child {
         flex-basis: 70px;
     }
-    .right ul {
-        justify-content: flex-start;
-    }
     .right {
-        flex-basis: 160px;
+        flex-basis: 150px;
     }
     .recently .track, .fyou .track {
         height: 300px;
