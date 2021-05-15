@@ -35,7 +35,7 @@ ul {
     list-style: none;
 }
 
-li a {
+a {
     text-decoration: none;
     color: grey;
 }
@@ -68,8 +68,7 @@ aside {
 }
 
 .logo {
-    flex-basis: auto;
-    flex-shrink: 0;
+    flex: 0 0 auto;
 }
 
 .logo img {
@@ -81,11 +80,10 @@ aside {
 }
 
 .sidebar {
-    flex-basis: auto;
-    flex-shrink: 0;
+    flex: 0 0 auto;
 }
 
-.sidebar .logo-small {
+.logo-small {
     display: none;
     height: 35px;
     margin-left: -5px;
@@ -112,16 +110,14 @@ aside {
     margin-bottom: 8px;
 }
 
+.playlist {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
 .icon {
     display: inline-block;
     vertical-align: middle;
-}
-
-.playlist {
-    flex-basis: auto;
-    flex-shrink: 1;
-    flex-grow: 1;
-    overflow-y: auto;
 }
 
 .playlist li {
@@ -130,8 +126,7 @@ aside {
 }
 
 .profile {
-    flex-basis: auto;
-    flex-shrink: 0;
+    flex: 0 0 auto;
     margin-top: 20px;
 }
 
@@ -144,6 +139,9 @@ aside {
 .profile > .bottom {
     font-size: 14px;
     margin-top: 13px;
+}
+
+.bottom a {
     color: white;
 }
 
@@ -170,7 +168,7 @@ aside {
 
 /*Zona Centrale*/
 
-main > section {
+.main {
     background-color: #141922;
     overflow-y: scroll;
     height: 100%;
@@ -229,10 +227,6 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.topbar li:first-child {
-    text-align: center;
-}
-
 .green-row {
     height: 2px;
     width: 30%;
@@ -241,7 +235,7 @@ button:hover {
 }
 
 
-/*  -------TRACK--------       */
+/*   -------TRACK--------   */
 
 .container-playlist {
     padding: 5px 5px 20px 20px;
@@ -301,17 +295,6 @@ button:hover {
     font-size: 60px;
     height: 60px;
     width: 60px;
-
-}
-
-li:hover {
-    color: white;
-    cursor: pointer;
-}
-
-li:hover a {
-    color: white;
-    cursor: pointer;
 }
 
 li:hover img {
@@ -319,7 +302,7 @@ li:hover img {
     cursor: pointer;
 }
 
-h2:hover, h6:hover, .time:hover, img:hover, span:hover, i.fas:hover {
+li:hover a, h2:hover, h6:hover, .time:hover, img:hover, span:hover, i.fas:hover, i.far:hover, span:hover a {
     color: white;
     cursor: pointer;
 }
@@ -333,7 +316,7 @@ i.fa-play-circle:hover {
     overflow: visible;
 }
 
-/*Footer*/
+/*  -----FOOTER-----  */
 
 footer {
     height: 90px;
@@ -461,32 +444,21 @@ i.fas.fa-circle {
 
 .right li {
     margin-right: 5px;
-    flex: 0 0 auto;
 }
-
-/* .right ul {
-    flex: 0 0 auto;
-} */
 
 .right {
     flex-basis: 200px;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
 
 .right li:last-child {
     flex-basis: 100px;
 }
 
-/*MEDIA QUERY*/
+/* ------ MEDIA QUERY ----- */
 
 /*Medium*/
 @media all and (max-width: 991px) {
-    .recently .track {
-        width: calc(100% / 4);
-        height: 230px;
-    }
-    .fyou .track {
+    .recently .track, .fyou .track {
         width: calc(100% / 4);
         height: 230px;
     }
@@ -496,7 +468,6 @@ i.fas.fa-circle {
     }
     .track span {
         font-size: 10px;
-        /* line-height: ; */
     }
     .track h6 {
         font-size: 10px;
@@ -520,10 +491,7 @@ i.fas.fa-circle {
         height: 200px;
         margin-bottom: 10px;
     }
-    .track h6 {
-        font-size: 15px;
-    }
-    .left i {
+    .track h6, .left i {
         font-size: 15px;
     } 
     .left li:last-child {
@@ -566,7 +534,7 @@ i.fas.fa-circle {
     .logo {
         display: none;
     }
-    .sidebar .logo-small {
+    .logo-small {
         display: block;
     }  
     .right i {
