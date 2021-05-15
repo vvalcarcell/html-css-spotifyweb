@@ -166,7 +166,7 @@ aside {
     padding-left: 4px;
 }
 
-/*Zona Centrale*/
+/* ---- PARTE CENTRALE---- */
 
 .main {
     background-color: #141922;
@@ -544,7 +544,7 @@ i.fas.fa-circle {
         margin-right: 3px;
     }
     .right li:last-child {
-        flex-basis: 70px;
+        flex-basis: 65px;
     }
     .right {
         flex-basis: 150px;
