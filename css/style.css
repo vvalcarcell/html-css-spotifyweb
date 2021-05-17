@@ -309,7 +309,7 @@ li:hover a, h2:hover, h6:hover, .time:hover, img:hover, span:hover, i.fas:hover,
     background-color: greenyellow;
 }
 
-i.fa-play-circle:hover {
+.center i.fa-play-circle:hover {
     transform: scale(1.2);
     overflow: visible;
 }
@@ -393,7 +393,7 @@ footer img {
     color: lightgray;
 }
 
-i.fa-play-circle {
+.center i.fa-play-circle {
     font-size: 25px;
     vertical-align: middle;
     width: 30px;
