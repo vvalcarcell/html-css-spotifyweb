@@ -274,14 +274,9 @@ button:hover {
     position: relative;
 }
 
-.cover i{
+.cover i.fa-play-circle {
     color: white;
     display: none;
-    overflow: visible;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
 }
 
 .cover:hover img {
@@ -289,12 +284,15 @@ button:hover {
     cursor: pointer;
 }
 
-.cover:hover i {
+.cover:hover i.fa-play-circle {
     display: block;
-    cursor: pointer;
     font-size: 60px;
     height: 60px;
     width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 li:hover img {
@@ -322,7 +320,6 @@ footer {
     height: 90px;
     background-color:#282828;
     color: grey;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
