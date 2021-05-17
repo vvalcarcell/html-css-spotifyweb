@@ -246,7 +246,7 @@ button:hover {
     text-align: center;
 }
 
-.recently .track {
+.recently .track, .fyou .track {
     width: calc(100% / 6);
     padding-right: 15px;
 }
@@ -260,7 +260,7 @@ button:hover {
     font-size: 13px;
 }
 
-.fyou .track, .img-container {
+.img-container {
     width: 210px;
     margin-right: 15px;
 }
@@ -460,8 +460,8 @@ i.fas.fa-circle {
         height: 230px;
     }
     .img-container {
-        width: 130px;
-        height: 130px;
+        width: 160px;
+        height: 160px;
     }
     .track span {
         font-size: 10px;
@@ -473,13 +473,8 @@ i.fas.fa-circle {
 
 /*Small*/
 @media all and (max-width: 767px) {
-    .recently .track {
+    .recently .track, .fyou .track {
         width: calc(100% / 2);
-        height: 320px;
-        margin-bottom: 10px;
-    }
-    .fyou .track {
-        width: calc(100% / 2 - 15px);
         height: 320px;
         margin-bottom: 10px;
     }
