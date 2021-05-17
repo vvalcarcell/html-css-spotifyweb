@@ -476,11 +476,8 @@ i.fas.fa-circle {
     .recently .track, .fyou .track {
         width: calc(100% / 2);
         height: 320px;
-        margin-bottom: 10px;
     }
-    .img-container {
-        width: 200px;
-        height: 200px;
+    .img-container, .recently .track, .fyou .track {
         margin-bottom: 10px;
     }
     .track h6, .left i {
